@@ -16,7 +16,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var bgImageView: UIImageView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var duration: UILabel!
-    
+
     
     @IBAction func play(_ sender: Any) {
         audioPlayer.enableRate = true;
@@ -63,6 +63,7 @@ class SecondViewController: UIViewController {
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             thisSong+=1
             audioPlayer.play()
+            
         }
         catch {
             print("ERROR")
@@ -80,17 +81,9 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
 //        _ = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+
         label.text = songs[thisSong]
-        if(audioPlayer.isPlaying)
-        {
-            playButton.setImage(UIImage(named: "pause"), for: .normal)
-        } else {
-            playButton.setImage(UIImage(named: "play1"), for: .normal)
-        }
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        blurView.frame = bgImageView.bounds
-        bgImageView.addSubview(blurView)
+        
         
     }
 

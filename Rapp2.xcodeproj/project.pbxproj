@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		57365268208976BA005ADAC7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57365267208976BA005ADAC7 /* ThirdViewController.swift */; };
+		57C21EBD208A6843000BDBDE /* stopp.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C21EBC208A6843000BDBDE /* stopp.png */; };
 		B0474AE42089AFFD00200C8E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0474AE32089AFFD00200C8E /* HomeViewController.swift */; };
-		B0474B05208A108800200C8E /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = B0474B04208A108800200C8E /* stop.png */; };
-		B0474B07208A108E00200C8E /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B0474B06208A108E00200C8E /* pause.png */; };
-		B0474B09208A10B000200C8E /* play1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0474B08208A10B000200C8E /* play1.png */; };
-		B0474B0B208A1E0B00200C8E /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B0474B0A208A1E0B00200C8E /* images.jpeg */; };
 		B0474B0D208A1E6800200C8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0474B0C208A1E6800200C8E /* Assets.xcassets */; };
 		B0474B17208A261900200C8E /* Pound Cake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0474B14208A261900200C8E /* Pound Cake.mp3 */; };
 		B0474B18208A261900200C8E /* Still Dre.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0474B15208A261900200C8E /* Still Dre.mp3 */; };
@@ -26,11 +23,8 @@
 
 /* Begin PBXFileReference section */
 		57365267208976BA005ADAC7 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		57C21EBC208A6843000BDBDE /* stopp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stopp.png; path = ../../../Downloads/stopp.png; sourceTree = "<group>"; };
 		B0474AE32089AFFD00200C8E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		B0474B04208A108800200C8E /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop.png; path = ../../../Downloads/stop.png; sourceTree = "<group>"; };
-		B0474B06208A108E00200C8E /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = ../../../Downloads/pause.png; sourceTree = "<group>"; };
-		B0474B08208A10B000200C8E /* play1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play1.png; path = ../../../Downloads/play1.png; sourceTree = "<group>"; };
-		B0474B0A208A1E0B00200C8E /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../Downloads/images.jpeg; sourceTree = "<group>"; };
 		B0474B0C208A1E6800200C8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0474B14208A261900200C8E /* Pound Cake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Pound Cake.mp3"; path = "Rapp2/Songs/Pound Cake.mp3"; sourceTree = SOURCE_ROOT; };
 		B0474B15208A261900200C8E /* Still Dre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Still Dre.mp3"; path = "Rapp2/Songs/Still Dre.mp3"; sourceTree = SOURCE_ROOT; };
@@ -80,12 +74,9 @@
 				B0C355EE2081658700B9592E /* SecondViewController.swift */,
 				B0474B1A208A262900200C8E /* AppDelegate.swift */,
 				57365267208976BA005ADAC7 /* ThirdViewController.swift */,
-				B0474B06208A108E00200C8E /* pause.png */,
 				B0474B0C208A1E6800200C8E /* Assets.xcassets */,
-				B0474B04208A108800200C8E /* stop.png */,
-				B0474B08208A10B000200C8E /* play1.png */,
+				57C21EBC208A6843000BDBDE /* stopp.png */,
 				B0C355F02081658800B9592E /* Main.storyboard */,
-				B0474B0A208A1E0B00200C8E /* images.jpeg */,
 				B0C355F52081658800B9592E /* LaunchScreen.storyboard */,
 				B0C355F82081658800B9592E /* Info.plist */,
 			);
@@ -163,10 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C355F72081658800B9592E /* LaunchScreen.storyboard in Resources */,
-				B0474B05208A108800200C8E /* stop.png in Resources */,
-				B0474B07208A108E00200C8E /* pause.png in Resources */,
-				B0474B09208A10B000200C8E /* play1.png in Resources */,
-				B0474B0B208A1E0B00200C8E /* images.jpeg in Resources */,
+				57C21EBD208A6843000BDBDE /* stopp.png in Resources */,
 				B0474B0D208A1E6800200C8E /* Assets.xcassets in Resources */,
 				B0474B18208A261900200C8E /* Still Dre.mp3 in Resources */,
 				B0C355F22081658800B9592E /* Main.storyboard in Resources */,

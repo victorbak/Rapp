@@ -19,7 +19,7 @@ var count = 0;
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var bgImageView: UIImageView!
+
     @IBOutlet weak var myTableView: UITableView!
     
     let backgroundImage = UIImage(named: "cotton")
@@ -67,11 +67,10 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             gettingSongNames()
             count = count + 1
         }
+        DispatchQueue.main.async {
+            // build your stuff to the main thread
+        }
         myTableView.backgroundColor = UIColor.clear
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        blurView.frame = bgImageView.bounds
-        bgImageView.addSubview(blurView)
     }
 
     override func didReceiveMemoryWarning() {

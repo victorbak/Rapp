@@ -44,7 +44,7 @@ class ThirdViewController : UIViewController, AVAudioRecorderDelegate, UITableVi
                 audioRecorder = try AVAudioRecorder(url: filename, settings: settings)
                 audioRecorder.delegate = self
                 audioRecorder.record()
-                buttonLabel.setImage(UIImage(named: "stop"), for: .normal)
+                buttonLabel.setImage(UIImage(named: "stopp"), for: .normal)
             }
             catch
             {
@@ -80,10 +80,6 @@ class ThirdViewController : UIViewController, AVAudioRecorderDelegate, UITableVi
         }
         
         myTableView.backgroundColor = UIColor.clear
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        blurView.frame = bgImageView.bounds
-        bgImageView.addSubview(blurView)
     }
     
     func getDirectory() -> URL
@@ -110,6 +106,8 @@ class ThirdViewController : UIViewController, AVAudioRecorderDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         //sets recording names
         cell.textLabel?.text = "Recording " + String(indexPath.row + 1)
+        cell.textLabel?.textColor = UIColor.white
+        
         return cell
     }
     
