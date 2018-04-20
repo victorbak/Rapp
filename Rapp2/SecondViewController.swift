@@ -12,16 +12,10 @@ import AVFoundation
 class SecondViewController: UIViewController {
     var step = 1
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var speedLabel: UILabel!
-    @IBOutlet weak var speedSwitch: UISwitch!
     
     @IBOutlet weak var duration: UILabel!
     
-    @IBOutlet weak var remaining: UILabel!
     
-    @IBAction func toggle(_ sender: Any) {
-        switchIsChanged(speedSwitch: speedSwitch)
-    }
     @IBAction func play(_ sender: Any) {
         audioPlayer.enableRate = true;
         if (!audioPlayer.isPlaying) {
@@ -69,34 +63,6 @@ class SecondViewController: UIViewController {
         }
     }
     
-    @objc func switchIsChanged(speedSwitch: UISwitch) {
-        
-        if speedSwitch.isOn {
-            switch step {
-            case 1:
-                audioPlayer.stop()
-                speedLabel.text = "1.0x speed"
-                audioPlayer.enableRate = true
-                audioPlayer.rate = 1.0
-                audioPlayer.prepareToPlay()
-                audioPlayer.play()
-                step += 1
-            case 2:
-                audioPlayer.enableRate = true
-                speedLabel.text = "2.0x speed"
-                audioPlayer.prepareToPlay()
-                audioPlayer.rate = 2.0
-                audioPlayer.play()
-                step += 1
-            case 3:
-                speedLabel.text = "0.5x speed"
-                audioPlayer.rate = 0.5
-                step = 1
-            default:
-                speedLabel.text = "Default"
-            }
-        }
-    }
     @objc func update(){
         var minutes = Int(audioPlayer.currentTime / 60);
         var seconds = Int(audioPlayer.currentTime.truncatingRemainder(dividingBy: 60));

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57365268208976BA005ADAC7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57365267208976BA005ADAC7 /* ThirdViewController.swift */; };
 		B0C355EB2081658700B9592E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C355EA2081658700B9592E /* AppDelegate.swift */; };
 		B0C355ED2081658700B9592E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C355EC2081658700B9592E /* FirstViewController.swift */; };
 		B0C355EF2081658700B9592E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C355EE2081658700B9592E /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57365267208976BA005ADAC7 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		B0C355E72081658700B9592E /* Rapp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rapp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C355EA2081658700B9592E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C355EC2081658700B9592E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				B0C355F32081658800B9592E /* Assets.xcassets */,
 				B0C355F52081658800B9592E /* LaunchScreen.storyboard */,
 				B0C355F82081658800B9592E /* Info.plist */,
+				57365267208976BA005ADAC7 /* ThirdViewController.swift */,
 			);
 			path = Rapp2;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				B0C355EF2081658700B9592E /* SecondViewController.swift in Sources */,
 				B0C355EB2081658700B9592E /* AppDelegate.swift in Sources */,
+				57365268208976BA005ADAC7 /* ThirdViewController.swift in Sources */,
 				B0C355ED2081658700B9592E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
