@@ -18,9 +18,14 @@ class ThirdViewController : UIViewController, AVAudioRecorderDelegate, UITableVi
     
     var numberOfRecords : Int = 0
     
-
+    @IBOutlet weak var bgImageView: UIImageView!
+    
     @IBOutlet weak var buttonLabel: UIButton!
     @IBOutlet weak var myTableView: UITableView!
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
+    }
     
     @IBAction func record(_ sender: Any)
     {
@@ -39,8 +44,7 @@ class ThirdViewController : UIViewController, AVAudioRecorderDelegate, UITableVi
                 audioRecorder = try AVAudioRecorder(url: filename, settings: settings)
                 audioRecorder.delegate = self
                 audioRecorder.record()
-                
-                buttonLabel.setTitle("Stop Recording", for: .normal)
+                buttonLabel.setImage(UIImage(named: "stop"), for: .normal)
             }
             catch
             {
@@ -55,9 +59,7 @@ class ThirdViewController : UIViewController, AVAudioRecorderDelegate, UITableVi
             
             UserDefaults.standard.set(numberOfRecords, forKey: "myNumber")
             myTableView.reloadData()
-            
-            
-            buttonLabel.setTitle("Start Recording", for: .normal)
+            buttonLabel.setImage(UIImage(named: "player_record"), for: .normal)
         }
     }
     
@@ -76,6 +78,12 @@ class ThirdViewController : UIViewController, AVAudioRecorderDelegate, UITableVi
                 print ("Accepted")
             }
         }
+        
+        myTableView.backgroundColor = UIColor.clear
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = bgImageView.bounds
+        bgImageView.addSubview(blurView)
     }
     
     func getDirectory() -> URL

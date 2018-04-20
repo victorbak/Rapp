@@ -15,12 +15,24 @@ var thisSong = 0
 var dur = 0.0
 var rem = 0.0
 var audiostuffed = false
+var count = 0;
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet weak var bgImageView: UIImageView!
     @IBOutlet weak var myTableView: UITableView!
+    
+    let backgroundImage = UIImage(named: "cotton")
+    
 
     
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
+    }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songs.count
@@ -51,7 +63,15 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        gettingSongNames()
+        if(count < 1) {
+            gettingSongNames()
+            count = count + 1
+        }
+        myTableView.backgroundColor = UIColor.clear
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = bgImageView.bounds
+        bgImageView.addSubview(blurView)
     }
 
     override func didReceiveMemoryWarning() {

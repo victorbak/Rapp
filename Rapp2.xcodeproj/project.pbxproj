@@ -8,22 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		57365268208976BA005ADAC7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57365267208976BA005ADAC7 /* ThirdViewController.swift */; };
-		B0C355EB2081658700B9592E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C355EA2081658700B9592E /* AppDelegate.swift */; };
+		B0474AE42089AFFD00200C8E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0474AE32089AFFD00200C8E /* HomeViewController.swift */; };
+		B0474B05208A108800200C8E /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = B0474B04208A108800200C8E /* stop.png */; };
+		B0474B07208A108E00200C8E /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B0474B06208A108E00200C8E /* pause.png */; };
+		B0474B09208A10B000200C8E /* play1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0474B08208A10B000200C8E /* play1.png */; };
+		B0474B0B208A1E0B00200C8E /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B0474B0A208A1E0B00200C8E /* images.jpeg */; };
+		B0474B0D208A1E6800200C8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0474B0C208A1E6800200C8E /* Assets.xcassets */; };
+		B0474B17208A261900200C8E /* Pound Cake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0474B14208A261900200C8E /* Pound Cake.mp3 */; };
+		B0474B18208A261900200C8E /* Still Dre.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0474B15208A261900200C8E /* Still Dre.mp3 */; };
+		B0474B19208A261900200C8E /* A Song About Nothing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0474B16208A261900200C8E /* A Song About Nothing.mp3 */; };
+		B0474B1B208A262900200C8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0474B1A208A262900200C8E /* AppDelegate.swift */; };
 		B0C355ED2081658700B9592E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C355EC2081658700B9592E /* FirstViewController.swift */; };
 		B0C355EF2081658700B9592E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C355EE2081658700B9592E /* SecondViewController.swift */; };
 		B0C355F22081658800B9592E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C355F02081658800B9592E /* Main.storyboard */; };
-		B0C355F42081658800B9592E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C355F32081658800B9592E /* Assets.xcassets */; };
 		B0C355F72081658800B9592E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C355F52081658800B9592E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		57365267208976BA005ADAC7 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		B0474AE32089AFFD00200C8E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B0474B04208A108800200C8E /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop.png; path = ../../../Downloads/stop.png; sourceTree = "<group>"; };
+		B0474B06208A108E00200C8E /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = ../../../Downloads/pause.png; sourceTree = "<group>"; };
+		B0474B08208A10B000200C8E /* play1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play1.png; path = ../../../Downloads/play1.png; sourceTree = "<group>"; };
+		B0474B0A208A1E0B00200C8E /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../Downloads/images.jpeg; sourceTree = "<group>"; };
+		B0474B0C208A1E6800200C8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0474B14208A261900200C8E /* Pound Cake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Pound Cake.mp3"; path = "Rapp2/Songs/Pound Cake.mp3"; sourceTree = SOURCE_ROOT; };
+		B0474B15208A261900200C8E /* Still Dre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Still Dre.mp3"; path = "Rapp2/Songs/Still Dre.mp3"; sourceTree = SOURCE_ROOT; };
+		B0474B16208A261900200C8E /* A Song About Nothing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "A Song About Nothing.mp3"; path = "Rapp2/Songs/A Song About Nothing.mp3"; sourceTree = SOURCE_ROOT; };
+		B0474B1A208A262900200C8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C355E72081658700B9592E /* Rapp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rapp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0C355EA2081658700B9592E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C355EC2081658700B9592E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B0C355EE2081658700B9592E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B0C355F12081658800B9592E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B0C355F32081658800B9592E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0C355F62081658800B9592E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0C355F82081658800B9592E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,14 +75,19 @@
 			isa = PBXGroup;
 			children = (
 				B0C35602208167C500B9592E /* Songs */,
-				B0C355EA2081658700B9592E /* AppDelegate.swift */,
+				B0474AE32089AFFD00200C8E /* HomeViewController.swift */,
 				B0C355EC2081658700B9592E /* FirstViewController.swift */,
 				B0C355EE2081658700B9592E /* SecondViewController.swift */,
+				B0474B1A208A262900200C8E /* AppDelegate.swift */,
+				57365267208976BA005ADAC7 /* ThirdViewController.swift */,
+				B0474B06208A108E00200C8E /* pause.png */,
+				B0474B0C208A1E6800200C8E /* Assets.xcassets */,
+				B0474B04208A108800200C8E /* stop.png */,
+				B0474B08208A10B000200C8E /* play1.png */,
 				B0C355F02081658800B9592E /* Main.storyboard */,
-				B0C355F32081658800B9592E /* Assets.xcassets */,
+				B0474B0A208A1E0B00200C8E /* images.jpeg */,
 				B0C355F52081658800B9592E /* LaunchScreen.storyboard */,
 				B0C355F82081658800B9592E /* Info.plist */,
-				57365267208976BA005ADAC7 /* ThirdViewController.swift */,
 			);
 			path = Rapp2;
 			sourceTree = "<group>";
@@ -74,6 +95,9 @@
 		B0C35602208167C500B9592E /* Songs */ = {
 			isa = PBXGroup;
 			children = (
+				B0474B16208A261900200C8E /* A Song About Nothing.mp3 */,
+				B0474B14208A261900200C8E /* Pound Cake.mp3 */,
+				B0474B15208A261900200C8E /* Still Dre.mp3 */,
 			);
 			name = Songs;
 			path = "New Group";
@@ -139,8 +163,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C355F72081658800B9592E /* LaunchScreen.storyboard in Resources */,
-				B0C355F42081658800B9592E /* Assets.xcassets in Resources */,
+				B0474B05208A108800200C8E /* stop.png in Resources */,
+				B0474B07208A108E00200C8E /* pause.png in Resources */,
+				B0474B09208A10B000200C8E /* play1.png in Resources */,
+				B0474B0B208A1E0B00200C8E /* images.jpeg in Resources */,
+				B0474B0D208A1E6800200C8E /* Assets.xcassets in Resources */,
+				B0474B18208A261900200C8E /* Still Dre.mp3 in Resources */,
 				B0C355F22081658800B9592E /* Main.storyboard in Resources */,
+				B0474B17208A261900200C8E /* Pound Cake.mp3 in Resources */,
+				B0474B19208A261900200C8E /* A Song About Nothing.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,9 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0474AE42089AFFD00200C8E /* HomeViewController.swift in Sources */,
 				B0C355EF2081658700B9592E /* SecondViewController.swift in Sources */,
-				B0C355EB2081658700B9592E /* AppDelegate.swift in Sources */,
 				57365268208976BA005ADAC7 /* ThirdViewController.swift in Sources */,
+				B0474B1B208A262900200C8E /* AppDelegate.swift in Sources */,
 				B0C355ED2081658700B9592E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

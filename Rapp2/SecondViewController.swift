@@ -13,6 +13,8 @@ class SecondViewController: UIViewController {
     var step = 1
     @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var bgImageView: UIImageView!
+    @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var duration: UILabel!
     
     
@@ -20,6 +22,10 @@ class SecondViewController: UIViewController {
         audioPlayer.enableRate = true;
         if (!audioPlayer.isPlaying) {
             audioPlayer.play()
+            playButton.setImage(UIImage(named: "pause"), for: .normal)
+        } else {
+            audioPlayer.pause()
+            playButton.setImage(UIImage(named: "play1"), for: .normal)
         }
 
     }
@@ -62,17 +68,30 @@ class SecondViewController: UIViewController {
             print("ERROR")
         }
     }
-    
-    @objc func update(){
-        var minutes = Int(audioPlayer.currentTime / 60);
-        var seconds = Int(audioPlayer.currentTime.truncatingRemainder(dividingBy: 60));
-        duration.text = String(format:"%d:%02d",minutes,seconds)
-    }
+//    
+//    @objc func update(){
+//            let minutes = Int(audioPlayer.currentTime / 60);
+//            let seconds = Int(audioPlayer.currentTime.truncatingRemainder(dividingBy: 60));
+//            duration.text = String(format:"%d:%02d",minutes,seconds)
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        _ = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        
+//        _ = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        label.text = songs[thisSong]
+        if(audioPlayer.isPlaying)
+        {
+            playButton.setImage(UIImage(named: "pause"), for: .normal)
+        } else {
+            playButton.setImage(UIImage(named: "play1"), for: .normal)
+        }
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = bgImageView.bounds
+        bgImageView.addSubview(blurView)
+        
     }
 
     override func didReceiveMemoryWarning() {
